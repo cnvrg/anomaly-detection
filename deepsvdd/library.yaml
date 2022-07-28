@@ -1,0 +1,46 @@
+title: anomaly deepsvdd
+version: 1.0.0
+description: "deepsvdd"
+icon: python
+
+author: "cnvrg"
+author_email: "libhub@cnvrg.io"
+
+tags:
+  - training
+command: python3 model.py
+
+requirements:
+  cpu: 3.5
+  memory: 8
+  gpu: 0
+  hpu: 0
+
+image: python:3.8.6
+language: python3
+
+arguments:
+  - key: 'data_dir'
+    type: 'categorical'
+    values:
+      - '/input/preprocess/data_df_pca.csv'
+  - key: 'hidden_neurons'
+    type: 'categorical'
+    values:
+      - '3'
+  - key: 'epochs'
+    type: 'discrete'
+    values:
+      - '100'
+  - key: 'dropout_rate'
+    type: 'discrete'
+    values:
+      - '0.2'
+  - key: 'l2_regularizer'
+    type: 'discrete'
+    values:
+      - '0.1'
+  - key: 'use_ae'
+    type: 'discrete'
+    values:
+      - 'False'

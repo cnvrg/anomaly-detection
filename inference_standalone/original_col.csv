@@ -1,0 +1,2 @@
+customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,Class
+3717-OFRTN,Male,0,Yes,Yes,29,Yes,No,Fiber optic,No internet service,Yes,No internet service,No internet service,No,No,One year,Yes,Bank transfer (automatic),64.76169246059918,2283.3004408418656,Yes

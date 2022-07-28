@@ -1,0 +1,10 @@
+OHE_columns,id_columns,label_encoded_columns
+Contract,customerID,InternetService
+DeviceProtection,,PaymentMethod
+MultipleLines,,
+OnlineBackup,,
+OnlineSecurity,,
+StreamingMovies,,
+StreamingTV,,
+TechSupport,,
+gender,,

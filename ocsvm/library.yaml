@@ -1,0 +1,38 @@
+title: anomaly ocsvm
+version: 1.0.0
+description: "ocsvm"
+icon: python
+
+author: "cnvrg"
+author_email: "libhub@cnvrg.io"
+
+tags:
+  - training
+command: python3 model.py
+
+requirements:
+  cpu: 3.5
+  memory: 8
+  gpu: 0
+  hpu: 0
+
+image: python:3.8.6
+language: python3
+
+arguments:
+  - key: 'data_dir'
+    type: 'categorical'
+    values:
+      - '/input/preprocess/data_df_pca.csv'
+  - key: 'nu'
+    type: 'categorical'
+    values:
+      - '0.5'
+  - key: 'tol'
+    type: 'discrete'
+    values:
+      - '0.001'
+  - key: 'kernel'
+    type: 'categorical'
+    values:
+      - 'rbf'

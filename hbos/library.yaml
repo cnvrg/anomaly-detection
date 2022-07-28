@@ -1,0 +1,39 @@
+title: anomaly hbos
+version: 1.0.0
+description: "hbos"
+icon: python
+
+author: "cnvrg"
+author_email: "libhub@cnvrg.io"
+
+tags:
+  - training
+command: python3 model.py
+
+requirements:
+  cpu: 3.5
+  memory: 8
+  gpu: 0
+  hpu: 0
+
+image: python:3.8.6
+language: python3
+
+arguments:
+  - key: 'data_dir'
+    type: 'categorical'
+    values:
+      - '/input/preprocess/data_df_pca.csv'
+  - key: 'n_bins'
+    type: 'categorical'
+    values:
+      - '10'
+  - key: 'alpha'
+    type: 'discrete'
+    values:
+      - '0.1'
+  - key: 'tol'
+    type: 'discrete'
+    values:
+       - '0.5'
+  
