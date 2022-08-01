@@ -10,3 +10,5 @@ This blueprint allows is a one click train and deploy solution for making Anomal
    
 Please note: This blueprint involves running multiple experiments to determine the best algorithm and best version of the that algorithm to use for API deployment based on your dataset. Running this blueprint might exhaust all your free resources if you are using the community version.
 
+[See more about this blueprint here.](https://github.com/cnvrg/anomaly-detection)
+
