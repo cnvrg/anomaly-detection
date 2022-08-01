@@ -108,7 +108,7 @@ tasks:
           - 'False'
 
   - title: autoencoder
-    top: 500
+    top: 450
     left: 300
 
     # Type must be according to the flow task conventions (data, exec, deploy)
@@ -287,8 +287,8 @@ tasks:
           - '50'
           
   - title: ocsvm
-    top: 450
-    left: 550
+    top: 300
+    left: 300
 
     # Type must be according to the flow task conventions (data, exec, deploy)
     type: exec
@@ -329,8 +329,8 @@ tasks:
         values:
           - 'rbf,poly'
   - title: hbos
-    top: 350
-    left: 350
+    top: 150
+    left: 300
 
     # Type must be according to the flow task conventions (data, exec, deploy)
     type: exec
@@ -419,8 +419,8 @@ tasks:
         values:
           - '0.01,0.005,0.1'
   - title: compare
-    top: 500
-    left: 500
+    top: 300
+    left: 700
 
     # Type must be according to the flow task conventions (data, exec, deploy)
     type: exec
