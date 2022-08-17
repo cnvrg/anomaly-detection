@@ -86,18 +86,6 @@ tasks:
         type: 'categorical'
         values:
           - '/input/s3_connector/anomaly_data/creditcard_data.csv'
-      - key: 'label_encoding'
-        type: 'categorical'
-        values:
-          - ''
-      - key: 'scaler'
-        type: 'categorical'
-        values:
-          - ''
-      - key: 'id_column'
-        type: 'discrete'
-        values:
-          - ''
       - key: 'pca_arg'
         type: 'discrete'
         values:
