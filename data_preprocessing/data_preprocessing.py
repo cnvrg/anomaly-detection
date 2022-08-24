@@ -248,7 +248,7 @@ percentage_cat_var = num_of_cat_var / data_df.shape[1]
 if scaler != "None":
     temp_df = pd.DataFrame()
     for colname, coltype in data_df.dtypes.iteritems():
-        if (len(data_df[colname].unique()) / len(data_df[colname]) > 0.2) and (
+        if (len(data_df[colname].unique()) / len(data_df[colname]) > 0.1) and (
             coltype == "int64" or coltype == "float64"
         ):
             temp_df[colname] = data_df[colname]
