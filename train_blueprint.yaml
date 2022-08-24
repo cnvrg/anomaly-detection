@@ -54,7 +54,7 @@ tasks:
       - key: prefix
         type: 'categorical'
         values:
-          - 'anomaly_data/creditcard_data.csv'
+          - 'anomaly_data/creditcard_data_v2.csv'
           
   - title: Preprocess
     top: 400
