@@ -1,8 +1,8 @@
 ---
 title: Anomaly Detection Train # Required on creation, replaces the "flow" parameter
 version: 1.0.0 # Required
-description: "Training for anomaly detection" # Optional for showing summary on UI
-long_description: "Training for anomaly detection and deploy it."
+description: "Train an anomaly-detection model with your custom data to detect anomalous data points or outliers." # Optional for showing summary on UI
+long_description: "Train an anomaly-detection model with your custom data, and deploy an endpoint, which detects anomalous data points or outliers."
 # Optional properties for crediting authors
 author: "cnvrg"
 author_email: "libhub@cnvrg.io"

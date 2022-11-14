@@ -1,8 +1,8 @@
 ---
 title: Anomaly Detection Inference # Required on creation, replaces the "flow" parameter
 version: 1.0.0 # Required
-description: "Training for anomaly detection" # Optional for showing summary on UI
-long_description: "Training for anomaly detection and deploy it."
+description: "Detect data anomalies or outliers using a pretrained anomaly-detection model and custom dataset." # Optional for showing summary on UI
+long_description: "Detect anomalies or outliers from data points using a pretrained anomaly-detection model and a custom dataset."
 # Optional properties for crediting authors
 author: "cnvrg"
 author_email: "libhub@cnvrg.io"

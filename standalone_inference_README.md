@@ -1,11 +1,13 @@
-This blueprint deploys a pretrained anomaly detection endpoint. The model is trained on anomalous customers based on their attributes and subscriptions to services. 
+Use this inference blueprint to immediately detect data anomalies or outliers in a dataset. To use this pretrained anomaly-detector model, create a ready-to-use API-endpoint that can be quickly integrated with your data and application.
 
-1. Click on `Use Blueprint` button.
-2. In the pop up, choose the relevant compute you want to use to deploy your API endpoint.
-3. You will be redirected to your endpoint
-4. You can now use the `Try it Live` section with any image.
-5. You can now integrate your API with your code using the integration panel at the bottom of the page.
-6. You will now have a functioning API endpoint that returns whether the input point is an anomaly or not.
-   
+This inference blueprint’s model was trained using anomalous customers based on their attributes and subscriptions to services. To use custom data according to your specific business, run this counterpart’s [training blueprint](https://metacloud.cloud.cnvrg.io/marketplace/blueprints/anomaly-detection-train), which trains the model and establishes an endpoint based on the newly trained model.
 
-[See more about this blueprint here.](https://github.com/cnvrg/anomaly-detection)
+Complete the following steps to deploy an anomaly-detector API endpoint:
+
+1. Click the **Use Blueprint** button.
+2. In the dialog, select the relevant compute to deploy the API endpoint and click the **Start** button.
+3. The cnvrg software redirects to your endpoint. Complete one or both of the following options:
+   - Use the Try it Live section with any input data point to check your model.
+   - Use the bottom integration panel to integrate your API with your code by copying in the code snippet.
+
+An API endpoint that detects whether an input data point is an anomaly has now been deployed. Click [here]() for detailed instructions to run this blueprint. To learn how this blueprint was created, click [here](https://github.com/cnvrg/anomaly-detection).
