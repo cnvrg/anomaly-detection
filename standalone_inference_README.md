@@ -10,4 +10,4 @@ Complete the following steps to deploy an anomaly-detector API endpoint:
    - Use the Try it Live section with any input data point to check your model.
    - Use the bottom integration panel to integrate your API with your code by copying in the code snippet.
 
-An API endpoint that detects whether an input data point is an anomaly has now been deployed. Click [here]() for detailed instructions to run this blueprint. To learn how this blueprint was created, click [here](https://github.com/cnvrg/anomaly-detection).
+An API endpoint that detects whether an input data point is an anomaly has now been deployed. To learn how this blueprint was created, click [here](https://github.com/cnvrg/anomaly-detection).
