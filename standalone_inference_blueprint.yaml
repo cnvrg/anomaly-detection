@@ -1,0 +1,73 @@
+# Copyright (c) 2022 Intel Corporation
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+# the Software, and to permit persons to whom the Software is furnished to do so,
+# subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+# FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+# COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+# IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#
+# SPDX-License-Identifier: MIT
+
+---
+title: Anomaly Detection Inference # Required on creation, replaces the "flow" parameter
+version: 1.0.0 # Required
+description: "Detect data anomalies or outliers using a pretrained anomaly-detection model and custom dataset." # Optional for showing summary on UI
+long_description: "Detect anomalies or outliers from data points using a pretrained anomaly-detection model and a custom dataset."
+# Optional properties for crediting authors
+author: "cnvrg"
+author_email: "libhub@cnvrg.io"
+
+# At least one tag [inference, training, data] must be present
+tags:
+  - inference
+
+# List of tasks (libraries)
+tasks:
+
+  - title: Inference
+    top: 400
+    left: 900
+
+    # Type must be according to the flow task conventions (data, exec, deploy)
+    type: deploy
+
+    # The library data
+    library: anomaly-inference-standalone
+    library_version: 1.0.0
+
+    # The flattened library parameters (in this case we have inference library)
+    command: python3 predict.py
+    kind: webservice
+
+    requirements:
+      cpu: 3.5
+      memory: 8
+      gpu: 0
+      hpu: 0
+    
+    image: cnvrg/cnvrg:v5.0
+    language: python3
+    accept_files: false
+
+    file_name: predict.py # the entrypoint file name
+    function_name: predict # the entrypoint function
+    prep_file: '' # preprocess file name
+    prep_function: '' # preprocess function
+    input_example:
+      vars: "7590-VHVEG,Female,0,Yes,No,1,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check,29.85,29.85"
+    input_schema:
+      vars: text
+    output_schema: {}
+
+relations: []
